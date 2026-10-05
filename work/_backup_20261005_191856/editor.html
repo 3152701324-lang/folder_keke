@@ -18,15 +18,13 @@
 .game-only #resultEdit{display:none}
 .studio-section{border-top:1px solid var(--line);padding-top:14px;margin-top:16px}.studio-section summary{cursor:pointer;font-size:11px;font-weight:600;color:#526755;margin-bottom:10px}.studio-tools{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.studio-tools button{height:31px;border:1px solid var(--line);background:#f5f7f1;border-radius:4px;display:grid;place-items:center;color:#526755}.studio-tools button.active{background:#dce9d2;border-color:#97b48a}.studio-tools svg{width:16px;height:16px}.studio-fields{display:grid;gap:8px;margin-top:10px;font-size:10px;color:#6c7c6e}.studio-fields label{display:flex;align-items:center;gap:6px;flex-wrap:wrap}.studio-fields select{width:100%;min-width:0;padding:5px;background:#f7f9f3;border:1px solid var(--line);border-radius:3px;font-size:10px;color:#526755}.studio-fields input[type=checkbox]{width:13px;height:13px;padding:0}.studio-readout{font-size:10px;color:#627667;line-height:1.6;margin-top:8px;overflow-wrap:anywhere}.fold-preview-list{display:grid;gap:5px;margin-top:9px}.fold-preview-list button{font-size:10px;text-align:left;padding:7px;border:1px solid var(--line);background:#f6f8f2;border-radius:4px;color:#46644e;line-height:1.5}.fold-preview-list button.invalid{color:#a05048;border-color:#d6b2ab}.game-only #redoBtn{display:none}
 </style>
-a.subtle-btn{text-decoration:none;color:var(--ink)}
-a.subtle-btn:hover{background:#edf1e7}
 </head>
 <body>
 <div class="app">
   <header class="topbar">
     <div class="brand"><div class="brandmark"><i data-lucide="origami"></i></div><div><div class="brand-name">FOLD FIELD</div><div class="brand-sub">纸上地图 · 2.5D MAP EDITOR</div></div></div>
     <div class="top-middle"><span class="project-name"><i class="dot"></i>无标题地图</span><span class="project-tag">LOCAL</span></div>
-    <div class="top-actions"><a class="subtle-btn" href="index.html" aria-label="返回主页">‹<span>返回主页</span></a><div class="separator"></div><button class="subtle-btn" id="newMap" data-tip="新建空白地图" aria-label="新建空白地图"><i data-lucide="file-plus-2"></i><span>新建</span></button><div class="separator"></div><button class="subtle-btn" id="importMap" data-tip="导入地图 JSON" aria-label="导入地图"><i data-lucide="folder-open"></i><span>导入</span></button><button class="subtle-btn" id="exportMap" data-tip="导出地图 JSON" aria-label="导出地图"><i data-lucide="download"></i><span>导出地图</span></button><button class="subtle-btn" id="exportGame" data-tip="导出独立游戏预览" aria-label="导出游戏"><i data-lucide="play"></i><span>导出游戏</span></button></div>
+    <div class="top-actions"><button class="subtle-btn" id="newMap" data-tip="新建空白地图" aria-label="新建空白地图"><i data-lucide="file-plus-2"></i><span>新建</span></button><div class="separator"></div><button class="subtle-btn" id="importMap" data-tip="导入地图 JSON" aria-label="导入地图"><i data-lucide="folder-open"></i><span>导入</span></button><button class="subtle-btn" id="exportMap" data-tip="导出地图 JSON" aria-label="导出地图"><i data-lucide="download"></i><span>导出地图</span></button><button class="subtle-btn" id="exportGame" data-tip="导出独立游戏预览" aria-label="导出游戏"><i data-lucide="play"></i><span>导出游戏</span></button></div>
   </header>
   <div class="workspace">
     <aside class="sidebar">
