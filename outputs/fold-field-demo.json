@@ -1,0 +1,246 @@
+{
+  "version": 1,
+  "width": 14,
+  "height": 10,
+  "tiles": [
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      {
+        "color": "purple",
+        "fold": "v"
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      {
+        "color": "blue",
+        "fold": null
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      {
+        "color": "blue",
+        "fold": null
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      {
+        "color": "purple",
+        "fold": "d1"
+      },
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      {
+        "color": "blue",
+        "fold": null
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      {
+        "color": "yellow",
+        "fold": null
+      },
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      {
+        "color": "black",
+        "fold": null
+      },
+      {
+        "color": "black",
+        "fold": null
+      },
+      {
+        "color": "black",
+        "fold": null
+      },
+      null,
+      {
+        "color": "purple",
+        "fold": "h"
+      },
+      null,
+      null,
+      null,
+      {
+        "color": "black",
+        "fold": null
+      },
+      {
+        "color": "black",
+        "fold": null
+      },
+      {
+        "color": "black",
+        "fold": null
+      },
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      {
+        "color": "red",
+        "fold": null
+      },
+      null,
+      null,
+      null,
+      null,
+      {
+        "color": "black",
+        "fold": null
+      },
+      {
+        "color": "red",
+        "fold": null
+      },
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      {
+        "color": "black",
+        "fold": null
+      },
+      {
+        "color": "black",
+        "fold": null
+      },
+      {
+        "color": "black",
+        "fold": null
+      },
+      {
+        "color": "black",
+        "fold": null
+      },
+      {
+        "color": "black",
+        "fold": null
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      {
+        "color": "green",
+        "fold": null
+      },
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    [
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ]
+  ],
+  "spawn": {
+    "r": 8,
+    "c": 1,
+    "dir": 0
+  },
+  "exit": {
+    "r": 4,
+    "c": 11
+  },
+  "name": "回折 · 一线两用",
+  "description": "同一条折线，换个站位就能通往另一座孤岛。抵达黄色出口，挑战 6 步。",
+  "maxSteps": 8,
+  "bestSteps": null
+}

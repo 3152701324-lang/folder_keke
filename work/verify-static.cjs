@@ -1,0 +1,12 @@
+const fs = require('node:fs');
+const vm = require('node:vm');
+const assert = require('node:assert/strict');
+const html = fs.readFileSync(require('node:path').join(__dirname, '../outputs/index.html'), 'utf8');
+const scripts = [...html.matchAll(/<script\b([^>]*)>([\s\S]*?)<\/script>/g)];
+assert.equal(scripts.length, 1);
+assert.ok(!/\bsrc\s*=/.test(scripts[0][1]));
+assert.ok(!/<link[^>]+href\s*=/.test(html));
+new vm.Script(scripts[0][2], { filename: 'fold-field-inline.js' });
+for (const id of ['viewport','editMode','playMode','startBtn','restartBtn','undoBtn','teleportBtn','exportMap','importMap','topView','fixedView']) assert.ok(html.includes('id="' + id + '"'));
+console.log('PASS: standalone HTML, no external scripts or styles, inline JS parses, required controls present.');
+console.log('HTML size: ' + Buffer.byteLength(html) + ' bytes');
